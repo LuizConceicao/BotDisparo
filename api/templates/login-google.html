@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login com Google</title>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+</head>
+<body>
+    <h1>Login com Google</h1>
+    
+    <div id="g_id_onload"
+        data-client_id="589440849402-41stfmbd6jof40rgihp4dqdrgfjig4v3.apps.googleusercontent.com"
+        data-callback="handleCredentialResponse">
+    </div>
+    
+    <div class="g_id_signin"
+        data-type="standard">
+    </div>
+
+    <script>
+        function handleCredentialResponse(response) {
+            fetch("/login-google", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ token: response.credential })
+            })
+            .then(res => res.json())
+            .then(data => {
+                alert("Bem-vindo, " + data.name);
+            })
+            .catch(err => console.error(err));
+        }
+    </script>
+</body>
+</html>

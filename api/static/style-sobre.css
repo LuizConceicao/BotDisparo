@@ -1,0 +1,92 @@
+/*Fonte e reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Fundo com cor e centralização */
+
+body {  
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: linear-gradient(65deg, #4facfe, #2a96f6,  #00f2fe);
+    background-size: 300% 300%;
+    animation: gradientAnimation 7s infinite alternate;
+    color: white;
+    
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 25% 75%;
+    }
+    100% {
+        background-position: 75% 25%;
+    }
+}
+
+.sobre-container {
+    margin-bottom: 20%;
+    position: fixed;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 20px;
+    width: 950px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+h2 {
+    align-items: center;
+    
+}
+
+.cabecalho {
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+    padding: 20;
+    border-radius: 20px;
+}
+
+
+.sobre {
+    position: absolute;
+    left: 220px;
+    top: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.automacoes {
+    position: absolute;
+    left: 300px;
+    top: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.compromissos {
+    position: absolute;
+    left: 435px;
+    top: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.marca {
+    color: #0a346c;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    font-size: 170%;
+}
+
+.marca2 {
+    color: #2471e4;
+    position: fixed;
+    left: 25px;
+    top: 20px;
+    font-size: 170%;
+}

@@ -1,0 +1,256 @@
+/* Fonte e reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fundo com cor e centralização */
+body {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilizando o container do Login*/
+.login-container {
+    position: fixed;
+    left: 38.5%;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.2); 
+    width: 320px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+/* Estilizando o título*/
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilizando os campos de entrada*/
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Estilizando botão de login */
+.btn {
+    display: block;
+    width: 100%;
+    background: #4facfe;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #044aa4;
+}
+
+/* Link para cadastro */
+.register-link {
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #4facfe;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Link para login */
+
+.login-link {
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #4facfe;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Estilizando o rodapé */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Faz o conteúdo crescer para empurrar o rodapé para baixo */
+.content {
+    flex: 1;
+    padding: 60px 20px;
+}
+
+footer {
+    background-color: #3d7485;
+    color: white;
+    padding: 15px;
+    width: 100%;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Faz o conteúdo crescer para empurrar o rodapé para baixo */
+.content {
+    flex: 1;
+    padding: 50px 20px;
+}
+
+footer p {
+    color: rgb(191, 190, 190);
+    text-align: center;
+    font-size: 80%;
+}
+
+.suporte {
+    color: rgb(191, 190, 190);
+    padding: 10px;
+    width: 100%;
+    font-size: 90%;
+    text-decoration: none;
+}
+
+.suporte:hover {
+    text-decoration: underline;
+}
+
+.sobre {
+    color: rgb(191, 190, 190);
+    padding: 10px;
+    width: 100%;
+    font-size: 90%;
+    text-decoration: none;
+}
+
+.sobre:hover {
+    text-decoration: underline;
+
+}
+
+.neo {
+    position: relative;
+    bottom: 65%;
+    right: 77.5%;
+    font-size: 450%;
+    position: fixed;
+    color: #0f448a;
+    text-shadow: -25px 0px 6px rgba(0, 0, 0, 0.4);
+}
+.neo2 {
+    position: relative;
+    bottom: 65%;
+    right: 77%;
+    font-size: 450%;
+    position: fixed;
+    color: #3e6eb7;
+}
+
+
+.flux {
+    position: relative;
+    bottom: 52%;
+    right: 74.5%;
+    font-size: 450%;
+    position: fixed;
+    color: #0f448a;
+    text-shadow: -25px 0px 6px rgba(0,0,0,0.4);
+}
+
+.flux2 {
+    position: relative;
+    bottom: 52%;
+    right: 74%;
+    font-size: 450%;
+    position: fixed;
+    color: #3e6eb7;
+}
+
+.novofluxo {
+    position: relative;
+    bottom: 44%;
+    right: 70.3%;
+    font-size: 130%;
+    position: fixed;
+    color: rgb(214, 250, 250);
+    background-color: #3a8cf7;
+    border-radius: 10px;
+    display: inline;
+    padding: 5px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.2); 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.btn-login-google {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #3a8cf7;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-login-google:hover {
+    background-color: #044aa4
+}
+
+.btn-login-google i {
+    margin-right: 10px;          
+    font-size: 18px;       
+    color: white; 
+}
+
